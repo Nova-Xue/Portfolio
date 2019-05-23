@@ -57,6 +57,10 @@ nav{
     padding: 20px 10px 20px 10px ;
     height: auto;
 }
+a{
+    text-align: center;
+    text-decoration: none;
+}
 /* end of the style of heard */
 /* main content style starts here */
 .main-content{
@@ -70,7 +74,14 @@ nav{
     height: auto;
     overflow: hidden;
 }
-.my-bio{
+#my-bio{
+    margin-top: 40px;
+    background-color: white;
+    padding: 10px;
+}
+h2{
+    margin: 0;
+    padding: 20px;
 }
 img{
     float: left;
@@ -80,6 +91,7 @@ img{
     padding: 20px;
 }
 p{
-    font-size: 15px;
+    font-size: 30px;
     margin: 20px;
 }
+/* end of main content style (of index) */
