@@ -10,21 +10,27 @@ body{
 html body{
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 .wrapper{
     min-height: 100%;
     margin-bottom: -50px;
 }
 #footer{
+    height: 50px;
 }
 .footer,
 .push{
     height: 50px;
+    margin: 0;
+    padding: 0;
 }
 footer{
     width: 100%;
     text-align: center;
     background-color: #666666;
+    margin: 0;
+    padding: 0;
 }
 /* above style the sticky footer */
 /* head style starts here */
@@ -35,13 +41,16 @@ header{
     /* to fix hearder(father block) collapse caused by inline blocks both floating */
     overflow: hidden;
 }
+section,
+div{
+    overflow: hidden;
+}
 .navi{
     margin: 0 auto;
     padding: 0;
     /* main content size 960px wide */
     width: 960px;
     /* same as above */
-    overflow: hidden;
 }
 h1{
     float: left;
@@ -51,11 +60,13 @@ h1{
     margin: 0;
     padding: 20px;
 }
+/* nav bars disapper when change size */
 nav{
     float: right;
     margin: 0;
     padding: 20px 10px 20px 10px ;
     height: auto;
+    
 }
 a{
     text-align: center;
@@ -68,14 +79,13 @@ a{
     /* backgroundimage of the main content div */
     background-image: url('../images/papyrus.png');
     /* to make div adjust height by itself */
-    margin: auto;
+    margin: 40px auto;
     width: 960px;
-    padding: 0px;
+    padding: 20px;
     height: auto;
-    overflow: hidden;
 }
 #my-bio{
-    margin-top: 40px;
+    margin-bottom: 40px;
     background-color: white;
     padding: 10px;
 }
@@ -91,7 +101,61 @@ img{
     padding: 20px;
 }
 p{
-    font-size: 30px;
+    font-size: 10px;
     margin: 20px;
 }
 /* end of main content style (of index) */
+/* style of contact main  */
+ul{
+    margin: 0;
+    padding: 20px;
+}
+input,
+.message{
+    width: 100%;
+    resize: none;
+}
+#submit{
+    width: 100px;
+    height: 50px;
+}
+/* end of contact main */
+/* portfolio parts  */
+h3{
+    z-index: 1;
+    margin: 0;
+    padding: 10px;
+    background-color: aqua;
+    position: relative;
+    bottom: -90px;
+}
+#part1,
+#part2,
+#part3,
+#part4,
+#part5{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    padding: 0;
+    float: left;
+}
+#part3,
+#part5{
+    clear: both;
+}
+#pimg1,
+#pimg2,
+#pimg3,
+#pimg4,
+#pimg5{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    top: -40px;
+}
+/* end of portfolio */
